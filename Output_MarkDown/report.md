@@ -1,7 +1,7 @@
 # System Spec Extract
 
 This is a nice picture of High Tech Campus.
-![HighTechCampus](data/images/htc.jpg)
+![HighTechCampus](../data/images/htc.jpg)
 
 
 ## Requirements for PowerSubsystem

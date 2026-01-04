@@ -37,9 +37,11 @@ print(f"Wrote Markdown: {OUT_MD_PATH}")
 # Requires: pandoc installed and on PATH
 try:
     subprocess.run(
-        ["pandoc", str(OUT_MD_PATH), "-o", str(OUT_DOCX_PATH)],
+        ["pandoc", "report.md", "-o", str(OUT_DOCX_PATH.resolve())],
         check=True,
+        cwd=str(OUT_MD_DIR),  # <-- important
     )
+
     print(f"Wrote DOCX: {OUT_DOCX_PATH}")
 except FileNotFoundError:
     raise SystemExit("Pandoc not found. Install it and ensure `pandoc` is on your PATH.")
