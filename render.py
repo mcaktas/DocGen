@@ -36,10 +36,14 @@ print(f"Wrote Markdown: {OUT_MD_PATH}")
 # --- Convert Markdown -> DOCX using Pandoc (no template) ---
 # Requires: pandoc installed and on PATH
 try:
+    REFERENCE_DOC = Path("WordTemplates/reference.docx")
+
     subprocess.run(
-        ["pandoc", "report.md", "-o", str(OUT_DOCX_PATH.resolve())],
+        ["pandoc", "report.md",
+         "--reference-doc", str(REFERENCE_DOC.resolve()),
+         "-o", str(OUT_DOCX_PATH.resolve())],
         check=True,
-        cwd=str(OUT_MD_DIR),  # <-- important
+        cwd=str(OUT_MD_DIR),
     )
 
     print(f"Wrote DOCX: {OUT_DOCX_PATH}")
