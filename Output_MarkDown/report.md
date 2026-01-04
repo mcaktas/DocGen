@@ -1,7 +1,15 @@
 # System Spec Extract
 
 This is a nice picture of High Tech Campus.
-![HighTechCampus](../data/images/htc.jpg)
+
+::: figure #fig-htc
+![High Tech Campus](../data/images/htc.jpg)
+High Tech Campus, Eindhoven
+:::
+
+
+This is another picture no it is same but rendered again.
+![HighTechCampus2](../data/images/htc.jpg)
 
 
 ## Requirements for PowerSubsystem
