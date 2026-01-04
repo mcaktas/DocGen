@@ -1,0 +1,12 @@
+# {{ title }}
+
+This is a nice picture of High Tech Campus.
+![HighTechCampus]({{ htc_image_path }})
+
+
+## Requirements for {{ part_name }}
+### This is a manual input
+
+{% for r in requirements %}
+- **{{ r.id }}**: {{ r.text }}
+{% endfor %}

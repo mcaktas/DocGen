@@ -1,0 +1,9 @@
+{
+  "title": "System Spec Extract",
+  "htc_image_path": "data/images/htc.jpg",
+  "part_name": "PowerSubsystem",
+  "requirements": [
+    {"id": "REQ-001", "text": "Shall supply 28V DC"},
+    {"id": "REQ-002", "text": "Shall operate from -20 to 55C"}
+  ]
+}
